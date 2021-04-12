@@ -10,7 +10,7 @@
    - Checkout source code
    - At docker-compose.yml file:
      Update content "image: anhtruong10391/docker-jenkins-maven" -> "image: ${your_docker_hub_id}/docker-jenkins-maven"
-   - Commit into your github
+   - Commit into your repository github
 3. Jenkin
    - Create new pipeline job with script at jenkin_scrip.txt
    - Run pipeline job to test result at repository of docker hub
