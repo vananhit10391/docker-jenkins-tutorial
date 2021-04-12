@@ -29,6 +29,7 @@ pipeline {
         stage('Build docker') {
             steps {
                 script {
+                    // sh "$dockerPath build -t $registry:$BUILD_NUMBER ."
                     sh "$dockerPath compose build"
                 }
             }
@@ -36,12 +37,14 @@ pipeline {
         stage('Push docker') {
             steps {
                 sh "$dockerPath login --username=$username --password=$password"
+                // sh "$dockerPath push $registry:$BUILD_NUMBER"
                 sh "$dockerPath push $registry"
             }
         }
         stage('Remove Unused docker image') {
             steps {
                 // Remove Unused docker image
+                // sh "$dockerPath rmi $registry:$BUILD_NUMBER"
                 sh "$dockerPath rmi $registry"
             }
         }
