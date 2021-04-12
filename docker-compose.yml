@@ -2,7 +2,9 @@ version: '2.1'
 services:
   docker-jenkins-maven:
     image: docker-jenkins-maven
-    build: .
+    build:
+      #setting path to run build image (include Dockerfile file)
+      context: ./docker-jenkins-maven
     ports:
       - 8081:8081
     restart: always

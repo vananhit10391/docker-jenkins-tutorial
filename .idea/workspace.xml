@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7672c9b-f0fd-4f7d-80b1-ebb5dfdc5739" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-jenkins-maven/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-maven/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-compose.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +93,7 @@
       <workItem from="1618196358574" duration="13000" />
       <workItem from="1618196374080" duration="20000" />
       <workItem from="1618196402128" duration="9000" />
-      <workItem from="1618196413408" duration="5743000" />
+      <workItem from="1618196413408" duration="8108000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1618198060991</created>
@@ -101,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618198060991</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="third commit">
+      <created>1618207982567</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618207982567</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="third commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
   </component>
 </project>
