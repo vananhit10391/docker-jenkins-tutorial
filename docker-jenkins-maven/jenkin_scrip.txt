@@ -1,0 +1,64 @@
+pipeline {
+    agent any
+
+    environment {
+        // In MacOS, run command: which docker
+        dockerPath = "${docker_path}"
+        registry = "${dockerhub_id}/docker-jenkins-maven"
+        username = "${dockerhub_id}"
+        password = "${dockerhub_password}"
+    }
+
+    tools {
+        maven 'Maven 3.8.1'
+    }
+
+    stages {
+        stage('Cloning git') {
+            steps {
+                // Get source code from github repository
+                git 'https://github.com/vananhit10391/docker-jenkins-tutorial.git'
+            }
+        }
+        stage('Build source') {
+            steps {
+                // Run Maven on a Unix agent.
+                sh 'mvn -f docker-jenkins-maven/pom.xml clean install'
+            }
+        }
+        stage('Build docker') {
+            steps {
+                script {
+                    sh "$dockerPath compose build"
+                }
+            }
+        }
+        stage('Push docker') {
+            steps {
+                sh "$dockerPath login --username=$username --password=$password"
+                sh "$dockerPath push $registry"
+            }
+        }
+        stage('Remove Unused docker image') {
+            steps {
+                // Remove Unused docker image
+                sh "$dockerPath rmi $registry"
+            }
+        }
+        stage('Restart server') {
+            steps {
+                echo 'Restart server'
+            }
+        }
+        stage('Unit test') {
+            steps {
+                echo 'Unit test'
+            }
+        }
+        stage('Restart') {
+            steps {
+                echo 'Restart'
+            }
+        }
+    }
+}
