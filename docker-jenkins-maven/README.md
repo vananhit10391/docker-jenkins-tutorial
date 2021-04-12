@@ -8,7 +8,8 @@
 1. Install and run docker, jenkin
 2. Git
    - Checkout source code
-   - Update ${dockerhub_id} at docker-compose.yml file
+   - At docker-compose.yml file:
+     Update content "image: anhtruong10391/docker-jenkins-maven" -> "image: ${your_docker_hub_id}/docker-jenkins-maven"
    - Commit into your github
 3. Jenkin
    - Create new pipeline job with script at jenkin_scrip.txt
