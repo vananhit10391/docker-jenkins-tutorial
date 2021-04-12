@@ -1,5 +1,5 @@
 # docker-jenkins-maven
-  CI/CD pipeline include
+  CI/CD pipeline include:
    1. Github
    2. Jenkin
    3. Docker Hub
@@ -8,4 +8,4 @@
 2. Clone source code from github
 3. Jenkin
    - Create new pipeline job with script at jenkin_scrip.txt
-   - Run pipeline job to test result
+   - Run pipeline job to test result at repository of docker hub
