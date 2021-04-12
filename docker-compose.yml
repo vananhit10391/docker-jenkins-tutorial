@@ -3,7 +3,7 @@ services:
   docker-jenkins-maven:
     image: anhtruong10391/docker-jenkins-maven
     build:
-      #setting path to run build image (include Dockerfile file)
+      # Setting path to run build image (include Dockerfile file)
       context: ./docker-jenkins-maven
     ports:
       - 8081:8081
