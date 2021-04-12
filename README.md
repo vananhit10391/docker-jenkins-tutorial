@@ -1,6 +1,6 @@
 # docker-jenkins-tutorial
 ## Technical points:
-### 1. CI/CD pipeline
+* 1. CI/CD pipeline
 ### 2. Build multip container docker with docker compose
 ### 3. Setting trigger build between jenkin and github (GitHub hook trigger for GITScm polling)
 ### 4. Build CI/CD pipeline for microservice
