@@ -1,4 +1,5 @@
 # docker-jenkins-maven
+  Example about CI/CD pipeline with github, jenkin, docker hub
   CI/CD pipeline include:
    1. Github
    2. Jenkin
