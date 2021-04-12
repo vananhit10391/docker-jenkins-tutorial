@@ -16,6 +16,8 @@
    - Run pipeline job to test result at repository of docker hub (exited ${your_docker_hub_id}/docker-jenkins-maven repository on your docker hub)
 4. Testing
    - Pull and run image from repository docker hub
+   - Check API:
+     curl -H "Content-Type: application/json" -XGET localhost:8081/hello/
 ## Keyword refer
 1. CLI jenkin
 2. CLI docker compose
