@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/docker-jenkin-tutorial.iml" filepath="$PROJECT_DIR$/.idea/docker-jenkin-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/docker-jenkins-maven/docker-jenkins-maven.iml" filepath="$PROJECT_DIR$/docker-jenkins-maven/docker-jenkins-maven.iml" />
     </modules>
   </component>
 </project>
