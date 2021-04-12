@@ -13,7 +13,9 @@
    - Commit into your repository github
 3. Jenkin
    - Create new pipeline job with script at jenkin_scrip.txt
-   - Run pipeline job to test result at repository of docker hub
+   - Run pipeline job to test result at repository of docker hub (exited ${your_docker_hub_id}/docker-jenkins-maven repository on your docker hub)
+4. Testing
+   - Pull and run image from repository docker hub
 ## Keyword refer
 1. CLI jenkin
 2. CLI docker compose
