@@ -17,7 +17,7 @@ pipeline {
         stage('Cloning git') {
             steps {
                 // Get source code from github repository
-                git 'https://github.com/vananhit10391/docker-jenkins-tutorial.git'
+                git '${repository_url}'
             }
         }
         stage('Build source') {
