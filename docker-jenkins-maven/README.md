@@ -1,5 +1,5 @@
 # docker-jenkins-maven
-  Example about CI/CD pipeline with github, jenkin, docker hub (using docker compose to build image)
+  Example about CI/CD pipeline with github, jenkin, docker hub
   CI/CD pipeline include:
    1. Github
    2. Jenkin
