@@ -5,6 +5,10 @@
    3. Docker Hub
 ## Step by step
 1. Install and run docker, jenkin
-3. Jenkin
+2. Jenkin
    - Create new pipeline job with script at jenkin_scrip.txt
    - Run pipeline job to test result at repository of docker hub
+## Keyword refer
+1. CLI jenkin
+2. CLI docker compose
+3. CLI docker
