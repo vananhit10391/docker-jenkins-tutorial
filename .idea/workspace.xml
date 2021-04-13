@@ -4,13 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7672c9b-f0fd-4f7d-80b1-ebb5dfdc5739" name="Default Changelist" comment="">
+    <list default="true" id="c7672c9b-f0fd-4f7d-80b1-ebb5dfdc5739" name="Default Changelist" comment="update jenkin_scrip.txt">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/src/main/java/vananh/dockerjenkinsgradle/DockerJenkinsGradleApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/src/main/java/vananh/dockerjenkinsgradle/HelloDockerGradleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/src/test/java/vananh/dockerjenkinsgradle/DockerJenkinsGradleApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-jenkins-maven/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-maven/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-jenkins-maven/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-maven/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-jenkins-maven/src/main/java/vananh/dockerjenkinsmaven/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-maven/src/main/java/vananh/dockerjenkinsmaven/HelloDockerMavenController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/docker-jenkins-gradle">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/docker-jenkins-gradle">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="docker-jenkins-gradle" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,10 +85,11 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker-jenkins-maven" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,15 +98,22 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.25316453" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docker-jenkins-maven" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.docker-jenkins-gradle [build]">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -70,6 +125,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-jenkins-gradle [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/docker-jenkins-gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="docker-jenkins-gradle" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="docker-jenkins-gradle" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DockerJenkinsGradleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="docker-jenkins-gradle.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vananh.dockerjenkinsgradle.DockerJenkinsGradleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DockerJenkinsMavenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="docker-jenkins-maven" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="vananh.dockerjenkinsmaven.DockerJenkinsMavenApplication" />
@@ -77,6 +207,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.docker-jenkins-gradle [build]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,7 +225,16 @@
       <workItem from="1618196358574" duration="13000" />
       <workItem from="1618196374080" duration="20000" />
       <workItem from="1618196402128" duration="9000" />
-      <workItem from="1618196413408" duration="11377000" />
+      <workItem from="1618196413408" duration="14502000" />
+      <workItem from="1618217513035" duration="5302000" />
+      <workItem from="1618281047252" duration="216000" />
+      <workItem from="1618281275978" duration="200000" />
+      <workItem from="1618281487900" duration="459000" />
+      <workItem from="1618281960513" duration="470000" />
+      <workItem from="1618282443919" duration="2262000" />
+      <workItem from="1618285056941" duration="80000" />
+      <workItem from="1618285182466" duration="96000" />
+      <workItem from="1618285283726" duration="2277000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1618198060991</created>
@@ -120,7 +264,42 @@
       <option name="project" value="LOCAL" />
       <updated>1618212917326</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test auto build on jenkins">
+      <created>1618213842381</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618213842381</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add jenkin_scrip.txt">
+      <created>1618216501929</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1618216501929</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update jenkin_scrip.txt file">
+      <created>1618217994258</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618217994258</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update docker-compose.yml file">
+      <created>1618218166719</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618218166719</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update jenkin_scrip.txt">
+      <created>1618219444336</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1618219444336</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,13 +315,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="second commit" />
     <MESSAGE value="third commit" />
     <MESSAGE value="add setting for docker compose" />
+    <MESSAGE value="test auto build on jenkins" />
+    <MESSAGE value="add jenkin_scrip.txt" />
+    <MESSAGE value="update jenkin_scrip.txt file" />
     <MESSAGE value="update docker-compose.yml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="update docker-compose.yml file" />
+    <MESSAGE value="update jenkin_scrip.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="update jenkin_scrip.txt" />
   </component>
 </project>

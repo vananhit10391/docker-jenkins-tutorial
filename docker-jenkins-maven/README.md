@@ -17,7 +17,7 @@
 4. Testing
    - Pull and run image from repository docker hub
    - Check API with command:
-     curl -H "Content-Type: application/json" -XGET localhost:8081/hello/
+     curl -H "Content-Type: application/json" -XGET localhost:8081/home/
 ## Keyword refer
 1. CLI jenkin
 2. CLI docker compose

@@ -8,3 +8,11 @@ services:
     ports:
       - 8081:8081
     restart: always
+  docker-jenkins-gradle:
+    image: anhtruong10391/docker-jenkins-gradle
+    build:
+      # Setting path to run build image (include Dockerfile file)
+      context: ./docker-jenkins-gradle
+    ports:
+      - 8082:8082
+    restart: always
