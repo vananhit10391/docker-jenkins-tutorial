@@ -8,5 +8,6 @@
   * At docker-compose.yml file:
     * update content "image: anhtruong10391/..." -> "image: ${your_docker_hub_id}/..."
 ## docker-jenkins-maven module
-  * Example about CI/CD pipeline with github, jenkin, docker hub
-    
+  * Example about CI/CD pipeline with github, jenkin, docker hub for maven
+## docker-jenkins-gradle module
+  * Example about CI/CD pipeline with github, jenkin, docker hub for gradle
