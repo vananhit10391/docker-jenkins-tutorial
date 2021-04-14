@@ -1,18 +1,55 @@
-version: '2.1'
 services:
-  docker-jenkins-maven:
-    image: anhtruong10391/docker-jenkins-maven
+#  docker-jenkins-maven:
+#    image: anhtruong10391/docker-jenkins-maven
+#    build:
+#      # Setting path to run build image (include Dockerfile file)
+#      context: ./docker-jenkins-maven
+#    ports:
+#      - 9000:9000
+#    restart: always
+#  docker-jenkins-gradle:
+#    image: anhtruong10391/docker-jenkins-gradle
+#    build:
+#      # Setting path to run build image (include Dockerfile file)
+#      context: ./docker-jenkins-gradle
+#    ports:
+#      - 9001:9001
+#    restart: always
+  #service 1: definition of mysql database
+  db:
+    image: mysql/mysql-server:latest
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: employee_manage
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3307:3307"
+    restart: always
+  # service 2: definition of phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: my-php-myadmin
+    ports:
+      - "8082:80"
+    restart: always
+    depends_on:
+      - db
+#    environment:
+#      SPRING_DATASOURCE_USERNAME: root
+#      SPRING_DATASOURCE_PASSWORD: root
+  docker-spring-mysql:
+    image: anhtruong10391/docker-spring-mysql
+    container_name: employee-service
     build:
       # Setting path to run build image (include Dockerfile file)
-      context: ./docker-jenkins-maven
+      context: ./docker-spring-mysql
     ports:
-      - 8081:8081
+      - 9002:9002
     restart: always
-  docker-jenkins-gradle:
-    image: anhtruong10391/docker-jenkins-gradle
-    build:
-      # Setting path to run build image (include Dockerfile file)
-      context: ./docker-jenkins-gradle
-    ports:
-      - 8082:8082
-    restart: always
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3307/employee_manage?createDatabaseIfNotExist=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root

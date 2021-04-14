@@ -5,29 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7672c9b-f0fd-4f7d-80b1-ebb5dfdc5739" name="Default Changelist" comment="update jenkin_scrip.txt">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/src/main/java/vananh/dockerjenkinsgradle/DockerJenkinsGradleApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/src/main/java/vananh/dockerjenkinsgradle/HelloDockerGradleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-jenkins-gradle/src/test/java/vananh/dockerjenkinsgradle/DockerJenkinsGradleApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/src/main/java/vananh/dockerspringmysql/DockerSpringMysqlApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/src/main/java/vananh/dockerspringmysql/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/src/main/java/vananh/dockerspringmysql/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/src/main/java/vananh/dockerspringmysql/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/src/main/java/vananh/dockerspringmysql/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/src/main/java/vananh/dockerspringmysql/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-spring-mysql/src/test/java/vananh/dockerspringmysql/DockerSpringMysqlApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-jenkins-maven/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-maven/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-jenkins-gradle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-gradle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-jenkins-gradle/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-gradle/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-jenkins-maven/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-maven/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-jenkins-maven/src/main/java/vananh/dockerjenkinsmaven/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-maven/src/main/java/vananh/dockerjenkinsmaven/HelloDockerMavenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-jenkins-maven/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-maven/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +39,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/docker-jenkins-gradle">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/docker-spring-mysql">
       <ProjectState />
     </projectState>
   </component>
@@ -47,12 +53,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="docker-jenkins-gradle" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -62,6 +63,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -100,7 +102,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25316453" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="trusted.hosts" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
@@ -114,17 +116,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.docker-jenkins-gradle [build]">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="docker-jenkins-gradle [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -207,6 +198,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DockerSpringMysqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="docker-spring-mysql.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vananh.dockerspringmysql.DockerSpringMysqlApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.docker-jenkins-gradle [build]" />
@@ -235,6 +233,30 @@
       <workItem from="1618285056941" duration="80000" />
       <workItem from="1618285182466" duration="96000" />
       <workItem from="1618285283726" duration="2277000" />
+      <workItem from="1618296111479" duration="7529000" />
+      <workItem from="1618306083613" duration="756000" />
+      <workItem from="1618306855410" duration="136000" />
+      <workItem from="1618307382620" duration="441000" />
+      <workItem from="1618308480553" duration="234000" />
+      <workItem from="1618308785031" duration="61000" />
+      <workItem from="1618308975800" duration="574000" />
+      <workItem from="1618365487499" duration="4379000" />
+      <workItem from="1618370176207" duration="2468000" />
+      <workItem from="1618372661091" duration="422000" />
+      <workItem from="1618373228642" duration="7178000" />
+      <workItem from="1618385345339" duration="2997000" />
+      <workItem from="1618388366883" duration="1247000" />
+      <workItem from="1618389631257" duration="997000" />
+      <workItem from="1618391049160" duration="2536000" />
+      <workItem from="1618393751456" duration="993000" />
+      <workItem from="1618394835102" duration="1856000" />
+      <workItem from="1618403690437" duration="27000" />
+      <workItem from="1618404260510" duration="82000" />
+      <workItem from="1618404813613" duration="581000" />
+      <workItem from="1618405400771" duration="7000" />
+      <workItem from="1618405420680" duration="59000" />
+      <workItem from="1618405828508" duration="1355000" />
+      <workItem from="1618407193539" duration="859000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1618198060991</created>
