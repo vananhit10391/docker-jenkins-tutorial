@@ -1,24 +1,19 @@
+version: "3.9"
 services:
-  #service 1: definition of mysql database
   db:
     image: mysql/mysql-server:latest
-    container_name: mysql-db
+    container_name: mysqldb
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: employee_manage
       MYSQL_ROOT_HOST: '%'
     ports:
-      - "3307:3307"
+      - 3307:3307
     restart: always
-  # service 2: definition of phpMyAdmin
-  phpmyadmin:
-    image: phpmyadmin:latest
-    container_name: my-php-myadmin
-    ports:
-      - "8082:80"
-    restart: always
-    depends_on:
-      - db
-    environment:
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - employee_network
+    volumes:
+#      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./docker-spring-mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+networks:
+  employee_network:

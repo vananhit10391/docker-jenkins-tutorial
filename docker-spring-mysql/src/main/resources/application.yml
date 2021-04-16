@@ -2,10 +2,10 @@ server:
   port: 9002
 spring:
   datasource:
-#    driver-class-name: com.mysql.jdbc.Driver
-    # com.mysql.cj.jdbc.Driver
-    # initialization-mode: never
-    url: jdbc:mysql://mysql-db:3307/employee_manage?createDatabaseIfNotExist=true&useSSL=false
+    platform: mysql
+    initialization-mode: always
+    url: jdbc:mysql://mysqldb/employee_manage?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+#    url: jdbc:mysql://localhost:3306/employee_manage?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
     username: root
     password: root
   jpa:
