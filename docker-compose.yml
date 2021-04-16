@@ -1,5 +1,25 @@
 version: "3.9"
 services:
+  docker-jenkins-maven:
+    image: anhtruong10391/docker-jenkins-maven
+    build:
+      # Setting path to run build image (include Dockerfile file)
+      context: ./docker-jenkins-maven
+    ports:
+      - 9000:9000
+    restart: always
+#    networks:
+#      - employee_network
+  docker-jenkins-gradle:
+    image: anhtruong10391/docker-jenkins-gradle
+    build:
+      # Setting path to run build image (include Dockerfile file)
+      context: ./docker-jenkins-gradle
+    ports:
+      - 9001:9001
+    restart: always
+#    networks:
+#      - employee_network
   # Definition of db service
   db:
     image: mysql/mysql-server:latest
