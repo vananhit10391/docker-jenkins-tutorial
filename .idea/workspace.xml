@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7672c9b-f0fd-4f7d-80b1-ebb5dfdc5739" name="Default Changelist" comment="Remove testing when build source for docker-spring-mysql module">
+    <list default="true" id="c7672c9b-f0fd-4f7d-80b1-ebb5dfdc5739" name="Default Changelist" comment="update jenkin_scrip.txt file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker-spring-mysql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -96,8 +95,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/docker-spring-mysql" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/docker-spring-mysql" />
       <recent name="$PROJECT_DIR$/docker-jenkins-maven" />
     </key>
   </component>
@@ -274,7 +273,8 @@
       <workItem from="1618720201068" duration="805000" />
       <workItem from="1618721022683" duration="66000" />
       <workItem from="1618721157365" duration="684000" />
-      <workItem from="1618721855642" duration="2600000" />
+      <workItem from="1618721855642" duration="2952000" />
+      <workItem from="1618725792791" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1618198060991</created>
@@ -367,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618722446385</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update jenkin_scrip.txt file">
+      <created>1618725509273</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1618725509274</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,13 +399,13 @@
     <MESSAGE value="add setting for docker compose" />
     <MESSAGE value="test auto build on jenkins" />
     <MESSAGE value="add jenkin_scrip.txt" />
-    <MESSAGE value="update jenkin_scrip.txt file" />
     <MESSAGE value="update docker-compose.yml file" />
     <MESSAGE value="update jenkin_scrip.txt" />
     <MESSAGE value="update all" />
     <MESSAGE value="Commit source code for docker-spring-mysql module" />
     <MESSAGE value="Update docker-compose.yml file" />
     <MESSAGE value="Remove testing when build source for docker-spring-mysql module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove testing when build source for docker-spring-mysql module" />
+    <MESSAGE value="update jenkin_scrip.txt file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update jenkin_scrip.txt file" />
   </component>
 </project>

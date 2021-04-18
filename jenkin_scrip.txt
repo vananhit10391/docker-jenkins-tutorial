@@ -50,7 +50,7 @@ pipeline {
                 // Remove Unused docker image
                 // sh "$dockerPath rmi $registry:$BUILD_NUMBER"
                 // sh "$dockerPath rmi $registry"
-                ẹcho 'Remove Unused docker image'
+                echo 'Remove Unused docker image'
             }
         }
         stage('Restart server') {
