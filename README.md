@@ -9,7 +9,7 @@
     - docker-jenkins-maven module (Example about CI/CD pipeline with github, jenkin, docker hub for maven)
     - docker-jenkins-gradle module (Example about CI/CD pipeline with github, jenkin, docker hub for gradle)
     - docker-spring-mysql module (Example about build spring, mysql on docker)
-# Step by step build and run
+# Step by step build and run with docker
 1. Install and run docker
 2. Git
    - Checkout source code
@@ -49,7 +49,7 @@
    * curl -H "Content-Type: application/json" -XGET localhost:9000/home/
    * curl -H "Content-Type: application/json" -XGET localhost:9001/home/
    * curl -H "Content-Type: application/json" -XGET localhost:9002/employee/
-# Run jenkin
+# Script build and run CI/CD with jenkins
   * Refer scrip config jenkins at <jenkin_scrip.txt> file
 # Keyword refer
 1. CLI docker compose
