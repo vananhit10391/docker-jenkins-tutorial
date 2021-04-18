@@ -1,4 +1,4 @@
-# docker-jenkins-tutorial module
+# docker-jenkins-tutorial
   * Technical points:
     * CI/CD pipeline
     * Build multip container docker with docker compose
