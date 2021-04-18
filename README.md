@@ -17,6 +17,8 @@
      Update content "image: anhtruong10391/..." -> "image: ${your_docker_hub_id}/..."
 3. Setting, build and run docker images
    * Option 1: build and run docker images by command
+     * At each module, change content Dockerfile
+       - Example: "ARG JAR_FILE=build/libs/*.jar" -> "ARG JAR_FILE=docker-jenkins-gradle/build/libs/*.jar" 
      * Build source
        - $ mvn -f docker-jenkins-maven/pom.xml clean install
        - $ gradle clean build --build-file docker-jenkins-gradle/build.gradle
