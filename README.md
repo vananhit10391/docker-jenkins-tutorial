@@ -14,7 +14,7 @@
 2. Git
    - Checkout source code
    - At docker-compose.yml file:
-     Update content "image: anhtruong10391/docker-spring-mysql" -> "image: ${your_docker_hub_id}/docker-spring-mysql"
+     Update content "image: anhtruong10391/..." -> "image: ${your_docker_hub_id}/..."
 3. Setting, build and run docker images
    * Option 1: build and run docker images by command
      * Build source
