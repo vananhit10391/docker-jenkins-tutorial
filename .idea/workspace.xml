@@ -7,10 +7,6 @@
     <list default="true" id="c7672c9b-f0fd-4f7d-80b1-ebb5dfdc5739" name="Default Changelist" comment="Remove testing when build source for docker-spring-mysql module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-jenkins-gradle/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-gradle/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-jenkins-maven/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-maven/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-spring-mysql/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-spring-mysql/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-spring-mysql/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-spring-mysql/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +274,7 @@
       <workItem from="1618720201068" duration="805000" />
       <workItem from="1618721022683" duration="66000" />
       <workItem from="1618721157365" duration="684000" />
-      <workItem from="1618721855642" duration="324000" />
+      <workItem from="1618721855642" duration="2600000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1618198060991</created>
@@ -364,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618562674241</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Remove testing when build source for docker-spring-mysql module">
+      <created>1618722446385</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1618722446385</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,6 +398,7 @@
     <MESSAGE value="update all" />
     <MESSAGE value="Commit source code for docker-spring-mysql module" />
     <MESSAGE value="Update docker-compose.yml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update docker-compose.yml file" />
+    <MESSAGE value="Remove testing when build source for docker-spring-mysql module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove testing when build source for docker-spring-mysql module" />
   </component>
 </project>

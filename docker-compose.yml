@@ -48,9 +48,9 @@ services:
       - employee_network
     links:
       - "mysqldb:mysql/mysql-server"
-#    environment:
-#      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb/employee_manage?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
-#      SPRING_DATASOURCE_USERNAME: root
-#      SPRING_DATASOURCE_PASSWORD: root
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb/employee_manage?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
 networks:
   employee_network:

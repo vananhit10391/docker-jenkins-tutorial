@@ -11,6 +11,7 @@ pipeline {
 
     tools {
         maven 'Maven 3.8.1'
+        gradle 'Gradle'
     }
 
     stages {
@@ -24,28 +25,32 @@ pipeline {
             steps {
                 // Run Maven on a Unix agent.
                 sh 'mvn -f docker-jenkins-maven/pom.xml clean install'
+                sh 'gradle clean build --build-file docker-jenkins-gradle/build.gradle'
+                sh 'gradle clean build --build-file docker-spring-mysql/build.gradle'
             }
         }
         stage('Build docker') {
             steps {
                 script {
                     // sh "$dockerPath build -t $registry:$BUILD_NUMBER ."
-                    sh "$dockerPath compose build"
+                    sh "$dockerPath compose up -d"
                 }
             }
         }
         stage('Push docker') {
             steps {
-                sh "$dockerPath login --username=$username --password=$password"
+                // sh "$dockerPath login --username=$username --password=$password"
                 // sh "$dockerPath push $registry:$BUILD_NUMBER"
-                sh "$dockerPath push $registry"
+                // sh "$dockerPath push $registry"
+                echo 'Push docker'
             }
         }
         stage('Remove Unused docker image') {
             steps {
                 // Remove Unused docker image
                 // sh "$dockerPath rmi $registry:$BUILD_NUMBER"
-                sh "$dockerPath rmi $registry"
+                // sh "$dockerPath rmi $registry"
+                ẹcho 'Remove Unused docker image'
             }
         }
         stage('Restart server') {
