@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7672c9b-f0fd-4f7d-80b1-ebb5dfdc5739" name="Default Changelist" comment="Update docker-compose.yml file">
+    <list default="true" id="c7672c9b-f0fd-4f7d-80b1-ebb5dfdc5739" name="Default Changelist" comment="Remove testing when build source for docker-spring-mysql module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-jenkins-gradle/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-gradle/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-jenkins-maven/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-jenkins-maven/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-spring-mysql/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-spring-mysql/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-spring-mysql/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-spring-mysql/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,17 +111,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DockerSpringMysqlApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="docker-jenkins-gradle [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -281,6 +274,11 @@
       <workItem from="1618561594360" duration="461000" />
       <workItem from="1618562072129" duration="250000" />
       <workItem from="1618562339153" duration="3783000" />
+      <workItem from="1618719784647" duration="399000" />
+      <workItem from="1618720201068" duration="805000" />
+      <workItem from="1618721022683" duration="66000" />
+      <workItem from="1618721157365" duration="684000" />
+      <workItem from="1618721855642" duration="324000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1618198060991</created>

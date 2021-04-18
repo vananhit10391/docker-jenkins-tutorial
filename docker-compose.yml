@@ -8,8 +8,6 @@ services:
     ports:
       - 9000:9000
     restart: always
-#    networks:
-#      - employee_network
   docker-jenkins-gradle:
     image: anhtruong10391/docker-jenkins-gradle
     build:
@@ -18,8 +16,6 @@ services:
     ports:
       - 9001:9001
     restart: always
-#    networks:
-#      - employee_network
   # Definition of db service
   db:
     image: mysql/mysql-server:latest
@@ -51,10 +47,10 @@ services:
     networks:
       - employee_network
     links:
-      - "mysqldb:mysql/mysql-server:latest"
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb/employee_manage?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+      - "mysqldb:mysql/mysql-server"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb/employee_manage?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+#      SPRING_DATASOURCE_USERNAME: root
+#      SPRING_DATASOURCE_PASSWORD: root
 networks:
   employee_network:

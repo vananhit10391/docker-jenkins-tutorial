@@ -2,8 +2,8 @@ server:
   port: 9002
 spring:
   datasource:
-    platform: mysql
-    initialization-mode: always
+#    platform: mysql
+#    initialization-mode: always
     url: jdbc:mysql://mysqldb/employee_manage?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
 #    url: jdbc:mysql://localhost:3306/employee_manage?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
     username: root
@@ -16,11 +16,11 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
-      naming:
-        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      type:
-        descriptor:
-          sql:
-            BasicBinder: TRACE
-      SQL: DEBUG
+#      naming:
+#        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#      type:
+#        descriptor:
+#          sql:
+#            BasicBinder: TRACE
+#      SQL: DEBUG
