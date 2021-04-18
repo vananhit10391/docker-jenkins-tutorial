@@ -1,4 +1,4 @@
-# docker-jenkins-tutorial
+# docker-jenkins-tutorial module
   * Technical points:
     * CI/CD pipeline
     * Build multip container docker with docker compose
@@ -49,7 +49,9 @@
    * curl -H "Content-Type: application/json" -XGET localhost:9000/home/
    * curl -H "Content-Type: application/json" -XGET localhost:9001/home/
    * curl -H "Content-Type: application/json" -XGET localhost:9002/employee/
-## Keyword refer
+# Run jenkin
+  * Refer scrip config jenkins at <jenkin_scrip.txt> file
+# Keyword refer
 1. CLI docker compose
 2. CLI docker
 3. CLI mysql
