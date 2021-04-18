@@ -21,7 +21,7 @@
      Update content "image: anhtruong10391/docker-spring-mysql" -> "image: ${your_docker_hub_id}/docker-spring-mysql"
 3. Setting, build and run docker images
    * Option 1: build and run docker images by command
-     ** Build source
+     * Build source
        $ mvn -f docker-jenkins-maven/pom.xml clean install
        $ gradle clean build --build-file docker-jenkins-gradle/build.gradle
        $ gradle clean build --build-file docker-spring-mysql/build.gradle
