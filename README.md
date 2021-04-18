@@ -8,11 +8,11 @@
   * At docker-compose.yml file:
     * update content "image: anhtruong10391/..." -> "image: ${your_docker_hub_id}/..."
   * List module:
-    * - docker-jenkins-maven module
+    - docker-jenkins-maven module
       (Example about CI/CD pipeline with github, jenkin, docker hub for maven)
-    * - docker-jenkins-gradle module
+    - docker-jenkins-gradle module
       (Example about CI/CD pipeline with github, jenkin, docker hub for gradle)
-    * - docker-spring-mysql module
+    - docker-spring-mysql module
       (Example about build spring, mysql on docker)
 # Step by step build and run
 1. Install and run docker
