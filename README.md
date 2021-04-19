@@ -7,13 +7,23 @@
     - docker-jenkins-gradle module (Example about CI/CD pipeline with github, jenkin, docker hub for gradle)
     - docker-spring-mysql module (Example about build spring, mysql on docker)
 # 1. Build CI/CD pipeline for microservice
-Step by step build and run with docker
-1. Install and run docker
-2. Git
+1.1 Build and run with docker
+    * Clear cache docker
+      * Stop and remove all process on docker
+        - $ docker stop $(docker ps -a -q)
+        - $ docker rm $(docker ps -a -q)
+      * Remove all image on docker
+        - $ docker rmi $(docker images -a -q)
+      * Clean cache
+        - $ docker builder prune
+      * Clean network
+        - $ docker network prune
+3.1.1. Install and run docker
+4.1.2. Git
    - Checkout source code
    - At docker-compose.yml file:
      * Update content "image: anhtruong10391/..." -> "image: ${your_docker_hub_id}/..."
-3. Setting, build and run docker images
+5.1.3. Setting, build and run docker images
    * Option 1: build and run docker images by command
      * At each module, change content Dockerfile
        - Example:
@@ -51,26 +61,12 @@ Step by step build and run with docker
        - $ gradle clean build --build-file docker-spring-mysql/build.gradle
      * Run
        - $ docker compose up
-4. Testing
+6.1.4. Testing
    * curl -H "Content-Type: application/json" -XGET localhost:9000/home/
    * curl -H "Content-Type: application/json" -XGET localhost:9001/home/
    * curl -H "Content-Type: application/json" -XGET localhost:9002/employee/
-# Script build and run CI/CD with jenkins
+7.2. Setting and run jenkin
   * Refer scrip config jenkins at <jenkin_scrip.txt> file
-# Some command with docker
-  * Stop and remove all process on docker
-    - $ docker stop $(docker ps -a -q)
-    - $ docker rm $(docker ps -a -q)
-  * Remove all image on docker
-    - $ docker rmi $(docker images -a -q)
-  * Clean cache
-    - $ docker builder prune
-  * Clean network
-    - $ docker network prune
-# Keyword refer
-1. CLI docker compose
-2. CLI docker
-3. CLI mysql
-# Setting GitHub hook trigger for GITScm polling
+8.3. Setting GitHub hook trigger for GITScm polling
   * Use ngrok to expose jenkins server to the internet
   * Configure GITHUB Webhook
