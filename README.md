@@ -1,8 +1,7 @@
 # docker-jenkins-tutorial (Tutorial about docker, jenkins with spring).
-  * Technical points:
-    1. Build CI/CD pipeline for microservice
-    2. Setting GitHub hook trigger for GITScm polling
-    3. Build CI/CD pipeline with AWS
+ 1. Build CI/CD pipeline for microservice
+ 2. Setting GitHub hook trigger for GITScm polling
+ 3. Build CI/CD pipeline with AWS
   * List module:
     - docker-jenkins-maven module (Example about CI/CD pipeline with github, jenkin, docker hub for maven)
     - docker-jenkins-gradle module (Example about CI/CD pipeline with github, jenkin, docker hub for gradle)
