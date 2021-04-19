@@ -1,5 +1,5 @@
 # DOCKER JENKINS TUTORIAL
-1. Build CI/CD pipeline for microservice
+ 1. Build CI/CD pipeline for microservice
   * Spring framework
   * Mysql
   * Jenkin
