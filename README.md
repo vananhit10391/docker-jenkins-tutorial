@@ -60,15 +60,15 @@
 # Script build and run CI/CD with jenkins
   * Refer scrip config jenkins at <jenkin_scrip.txt> file
 # Some command with docker
-    - Stop and remove all process on docker
-      $ docker stop $(docker ps -a -q)
-      $ docker rm $(docker ps -a -q)
-    - Remove all image on docker
-      $ docker rmi $(docker images -a -q)
-    - Clean cache
-      $ docker builder prune
-    - Clean network
-      $ docker network prune
+  - Stop and remove all process on docker
+    $ docker stop $(docker ps -a -q)
+    $ docker rm $(docker ps -a -q)
+  - Remove all image on docker
+    $ docker rmi $(docker images -a -q)
+  - Clean cache
+    $ docker builder prune
+  - Clean network
+    $ docker network prune
 # Keyword refer
 1. CLI docker compose
 2. CLI docker
