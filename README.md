@@ -26,7 +26,7 @@
 ## 1.2. Check out source code
 * Checkout source code
 * At docker-compose.yml file
-  Update content "image: anhtruong10391/..." -> "image: ${your_docker_hub_id}/..."
+  - Update content "image: anhtruong10391/..." -> "image: ${your_docker_hub_id}/..."
 ## 1.3. Setting, build and run docker images
 ### Option 1: Build and run docker images by command
     - At each module, change content Dockerfile
