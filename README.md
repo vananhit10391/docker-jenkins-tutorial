@@ -38,8 +38,8 @@
           - $ docker container exec -it mysqldb bash
           - $ mysql -uroot -proot
        * Run containers
-          - $ docker container run --name docker-jenkins-maven-container -d  anhtruong10391/docker-jenkins-maven
-          - $ docker container run --name docker-jenkins-gradle-container -d anhtruong10391/docker-jenkins-gradle
+          - $ docker container run --name docker-jenkins-maven-container -p 9000:9000 -d anhtruong10391/docker-jenkins-maven
+          - $ docker container run --name docker-jenkins-gradle-container -p 9001:9001 -d anhtruong10391/docker-jenkins-gradle
           - $ docker container run --network employee-mysql --name employee-service-container --link mysqldb:anhtruong10391/mysql-server -p 9002:9002 -d anhtruong10391/employee-service
        * Check log
           - $ docker container logs -t mysqldb
