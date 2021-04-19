@@ -1,16 +1,16 @@
 # docker-jenkins-tutorial
- 1. Build CI/CD pipeline for microservice
-    *  Spring framework
-    *  Mysql
-    *  Jenkin
-    *  Docker
-    *  CI/CD pipeline
-    *  Setting GitHub hook trigger for GITScm polling
- 3. Build CI/CD pipeline with AWS
-  * List module:
-    - docker-jenkins-maven module (Example about CI/CD pipeline with github, jenkin, docker hub for maven)
-    - docker-jenkins-gradle module (Example about CI/CD pipeline with github, jenkin, docker hub for gradle)
-    - docker-spring-mysql module (Example about build spring, mysql on docker)
+  1. Build CI/CD pipeline for microservice
+     * Spring framework
+     * Mysql
+     * Jenkin
+     * Docker
+     * CI/CD pipeline
+     * Setting GitHub hook trigger for GITScm polling
+  3. Build CI/CD pipeline with AWS
+  4. List module:
+     * docker-jenkins-maven module (Example about CI/CD pipeline with github, jenkin, docker hub for maven)
+     * docker-jenkins-gradle module (Example about CI/CD pipeline with github, jenkin, docker hub for gradle)
+     * docker-spring-mysql module (Example about build spring, mysql on docker)
 # 1. Build CI/CD pipeline for microservice
 ## 1.1. Clear cache docker
         * Stop and remove all process on docker
@@ -24,7 +24,7 @@
           $ docker network prune
 ## 1.2. Check out source code
         * Checkout source code
-        * At docker-compose.yml file:
+        * At docker-compose.yml file
           - Update content "image: anhtruong10391/..." -> "image: ${your_docker_hub_id}/..."
 ## 1.3. Setting, build and run docker images
 ### 1.3.1. OPTION 1: BUILD AND RUN DOCKER IMAGES BY COMMAND
