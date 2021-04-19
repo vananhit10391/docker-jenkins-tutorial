@@ -37,7 +37,7 @@ services:
 #      - ./docker-mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
   #  Definition of employee-service service
   employee-service:
-    image: anhtruong10391/docker-spring-mysql
+    image: anhtruong10391/employee-service
     container_name: employee-service-container
     build:
       # Setting path to run build image (include Dockerfile file)
