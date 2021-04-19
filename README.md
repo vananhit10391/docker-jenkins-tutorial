@@ -27,7 +27,7 @@
         * At docker-compose.yml file:
           - Update content "image: anhtruong10391/..." -> "image: ${your_docker_hub_id}/..."
 ## 1.3. Setting, build and run docker images
-        * OPTION 1: BUILD AND RUN DOCKER IMAGES BY COMMAND
+### 1.3.1. OPTION 1: BUILD AND RUN DOCKER IMAGES BY COMMAND
           - At each module, change content Dockerfile
             Example: "ARG JAR_FILE=build/libs/*.jar" -> "ARG JAR_FILE=docker-jenkins-gradle/build/libs/*.jar" 
           - Build source
@@ -56,7 +56,7 @@
               $ docker container logs -t docker-jenkins-maven-container
               $ docker container logs -t docker-jenkins-gradle-container 
               $ docker container logs -t employee-service-container
-        * OPTION 2: BUILD AND RUN DOCKER IMAGES BY DOCKER COMPOSE
+### 1.3.2. OPTION 2: BUILD AND RUN DOCKER IMAGES BY DOCKER COMPOSE
           - Build source
             $ mvn -f docker-jenkins-maven/pom.xml clean install
             $ gradle clean build --build-file docker-jenkins-gradle/build.gradle
@@ -67,9 +67,9 @@
         * curl -H "Content-Type: application/json" -XGET localhost:9000/home/
         * curl -H "Content-Type: application/json" -XGET localhost:9001/home/
         * curl -H "Content-Type: application/json" -XGET localhost:9002/employee/
-## 1.5 Build CI/CD pipeline with jenkins
-### 1.5.1 Config job jenkin (run with docker compose)
+## 1.5. Build CI/CD pipeline with jenkins
+### 1.5.1. Config job jenkin (run with docker compose)
           * Refer scrip config jenkins at <jenkin_scrip.txt> file
-### 1.5.2 Setting GitHub hook trigger for GITScm polling (auto build source when have event push source code on git)
+### 1.5.2. Setting GitHub hook trigger for GITScm polling (auto build source when have event push source code on git)
           * Use ngrok to expose jenkins server to the internet
           * Configure GITHUB Webhook
