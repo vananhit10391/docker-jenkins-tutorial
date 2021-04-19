@@ -50,7 +50,8 @@ services:
     networks:
       - employee_network
     links:
-      - "mysqldb:mysql/mysql-server"
+#      - "mysqldb:mysql/mysql-server"
+      - "mysqldb:anhtruong10391/employee-mysql"
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb/employee_manage?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
       SPRING_DATASOURCE_USERNAME: root
