@@ -5,6 +5,7 @@
      * Jenkin
      * Docker
      * CI/CD pipeline
+     * Ngrok
      * Setting GitHub hook trigger for GITScm polling
   3. Build CI/CD pipeline with AWS
   4. List module:
