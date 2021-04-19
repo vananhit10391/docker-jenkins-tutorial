@@ -15,14 +15,14 @@
 # 1. BUILD CI/CD PIPEPLINE FOR MICROSERVICE
 ## 1.1. Clear cache docker
 * Stop and remove all process on docker
-  $ docker stop $(docker ps -a -q)
-  $ docker rm $(docker ps -a -q)
+  - docker stop $(docker ps -a -q)
+  - docker rm $(docker ps -a -q)
 * Remove all image on docker
-  $ docker rmi $(docker images -a -q)
+  - docker rmi $(docker images -a -q)
 * Clean cache
-  $ docker builder prune
+  - docker builder prune
 * Clean network
-  $ docker network prune
+  - docker network prune
 ## 1.2. Check out source code
 * Checkout source code
 * At docker-compose.yml file
@@ -30,7 +30,7 @@
 ## 1.3. Setting, build and run docker images
 ### Option 1: Build and run docker images by command
     - At each module, change content Dockerfile
-      - Example: "ARG JAR_FILE=build/libs/*.jar" -> "ARG JAR_FILE=docker-jenkins-gradle/build/libs/*.jar" 
+      Example: "ARG JAR_FILE=build/libs/*.jar" -> "ARG JAR_FILE=docker-jenkins-gradle/build/libs/*.jar" 
     - Build source
       $ mvn -f docker-jenkins-maven/pom.xml clean install
       $ gradle clean build --build-file docker-jenkins-gradle/build.gradle
