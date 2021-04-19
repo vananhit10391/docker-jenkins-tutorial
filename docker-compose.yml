@@ -18,20 +18,23 @@ services:
     restart: always
   # Definition of db service
   db:
-    image: mysql/mysql-server:latest
+    image: anhtruong10391/mysql-server
     container_name: mysqldb
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: employee_manage
-      MYSQL_ROOT_HOST: '%'
+    build:
+      # Setting path to run build image (include Dockerfile file)
+      context: ./docker-mysql
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_DATABASE: employee_manage
+#      MYSQL_ROOT_HOST: '%'
     ports:
       - 3307:3307
     restart: always
     networks:
       - employee_network
-    volumes:
-#      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-      - ./docker-spring-mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+#    volumes:
+##      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+#      - ./docker-mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
   #  Definition of employee-service service
   employee-service:
     image: anhtruong10391/docker-spring-mysql
