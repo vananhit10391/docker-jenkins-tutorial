@@ -16,13 +16,13 @@ services:
     ports:
       - 9001:9001
     restart: always
-  # Definition of db service
+  # Definition of employee-mysql service
   db:
-    image: anhtruong10391/mysql-server
+    image: anhtruong10391/employee-mysql
     container_name: mysqldb
     build:
       # Setting path to run build image (include Dockerfile file)
-      context: ./docker-mysql
+      context: ./employee-mysql
 #    environment:
 #      MYSQL_ROOT_PASSWORD: root
 #      MYSQL_DATABASE: employee_manage
@@ -34,7 +34,7 @@ services:
       - employee_network
 #    volumes:
 ##      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-#      - ./docker-mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+#      - ./employee-mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
   #  Definition of employee-service service
   employee-service:
     image: anhtruong10391/employee-service

@@ -31,8 +31,8 @@
 ### Option 1: Build and run docker images by command
     - At each module, change content Dockerfile:
       Example: "ARG JAR_FILE=build/libs/*.jar" -> "ARG JAR_FILE=docker-jenkins-gradle/build/libs/*.jar" 
-    - At docker-mysql/Dockerfile, change content:
-      "COPY ./init.sql /docker-entrypoint-initdb.d/init.sql" -> "COPY ./docker-mysql/init.sql /docker-entrypoint-initdb.d/init.sql"
+    - At employee-mysql/Dockerfile, change content:
+      "COPY ./init.sql /docker-entrypoint-initdb.d/init.sql" -> "COPY ./employee-mysql/init.sql /docker-entrypoint-initdb.d/init.sql"
     - Build source
       $ mvn -f docker-jenkins-maven/pom.xml clean install
       $ gradle clean build --build-file docker-jenkins-gradle/build.gradle
@@ -40,20 +40,20 @@
     - Build images
       $ docker image build -f docker-jenkins-maven/Dockerfile -t anhtruong10391/docker-jenkins-maven .
       $ docker image build -f docker-jenkins-gradle/Dockerfile -t anhtruong10391/docker-jenkins-gradle .
-      $ docker image build -f docker-mysql/Dockerfile -t anhtruong10391/mysql-server .
+      $ docker image build -f employee-mysql/Dockerfile -t anhtruong10391/employee-mysql .
       $ docker image build -f docker-spring-mysql/Dockerfile -t anhtruong10391/employee-service .
     - Build and run mysql image
       > Create new network
         $ docker network create employee-mysql
       > Run
-        $ docker container run --name mysqldb --network employee-mysql -d anhtruong10391/mysql-server
+        $ docker container run --name mysqldb --network employee-mysql -d anhtruong10391/employee-mysql
       > Check connection
         $ docker container exec -it mysqldb bash
         $ mysql -uroot -proot
       > Run containers
         $ docker container run --name docker-jenkins-maven-container -p 9000:9000 -d anhtruong10391/docker-jenkins-maven
         $ docker container run --name docker-jenkins-gradle-container -p 9001:9001 -d anhtruong10391/docker-jenkins-gradle
-        $ docker container run --network employee-mysql --name employee-service-container --link mysqldb:anhtruong10391/mysql-server -p 9002:9002 -d anhtruong10391/employee-service
+        $ docker container run --network employee-mysql --name employee-service-container --link mysqldb:anhtruong10391/employee-mysql -p 9002:9002 -d anhtruong10391/employee-service
       > Check log
         $ docker container logs -t mysqldb
         $ docker container logs -t docker-jenkins-maven-container
