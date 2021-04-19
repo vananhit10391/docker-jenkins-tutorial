@@ -65,9 +65,9 @@
           - Build and run with docker compose
             $ docker compose up
 ## 1.4. Testing
-        * curl -H "Content-Type: application/json" -XGET localhost:9000/home/
-        * curl -H "Content-Type: application/json" -XGET localhost:9001/home/
-        * curl -H "Content-Type: application/json" -XGET localhost:9002/employee/
+* curl -H "Content-Type: application/json" -XGET localhost:9000/home/
+* curl -H "Content-Type: application/json" -XGET localhost:9001/home/
+* curl -H "Content-Type: application/json" -XGET localhost:9002/employee/
 ## 1.5. Build CI/CD pipeline with jenkins (auto build)
 ### 1.5.1. Config job jenkin (run with docker compose)
            * Refer scrip config jenkins at <jenkin_scrip.txt> file
