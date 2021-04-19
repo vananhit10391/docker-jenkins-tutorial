@@ -8,7 +8,7 @@
     - docker-spring-mysql module (Example about build spring, mysql on docker)
 # 1. Build CI/CD pipeline for microservice
 ## 1.1. Build and run with docker
-        * Clear cache docker
+        Clear cache docker
           * Stop and remove all process on docker
             - $ docker stop $(docker ps -a -q)
             - $ docker rm $(docker ps -a -q)
