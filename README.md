@@ -59,11 +59,11 @@
         $ docker container logs -t employee-service-container
 ### Option 2: Build and run docker images by docker compose
 * Build source
-$ mvn -f docker-jenkins-maven/pom.xml clean install
-$ gradle clean build --build-file docker-jenkins-gradle/build.gradle
-$ gradle clean build --build-file docker-spring-mysql/build.gradle
+- $ mvn -f docker-jenkins-maven/pom.xml clean install
+- $ gradle clean build --build-file docker-jenkins-gradle/build.gradle
+- $ gradle clean build --build-file docker-spring-mysql/build.gradle
 * Build and run with docker compose
-  $ docker compose up
+- $ docker compose up
 ## 1.4. Testing
 * curl -H "Content-Type: application/json" -XGET localhost:9000/home/
 * curl -H "Content-Type: application/json" -XGET localhost:9001/home/
