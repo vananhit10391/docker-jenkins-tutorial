@@ -28,7 +28,7 @@
         * At docker-compose.yml file
           - Update content "image: anhtruong10391/..." -> "image: ${your_docker_hub_id}/..."
 ## 1.3. Setting, build and run docker images
-### OPTION 1: BUILD AND RUN DOCKER IMAGES BY COMMAND
+### Option 1: Build and run docker images by command
           - At each module, change content Dockerfile
             Example: "ARG JAR_FILE=build/libs/*.jar" -> "ARG JAR_FILE=docker-jenkins-gradle/build/libs/*.jar" 
           - Build source
@@ -57,7 +57,7 @@
               $ docker container logs -t docker-jenkins-maven-container
               $ docker container logs -t docker-jenkins-gradle-container 
               $ docker container logs -t employee-service-container
-### OPTION 2: BUILD AND RUN DOCKER IMAGES BY DOCKER COMPOSE
+### Option 2: Build and run docker images by docker compose
           - Build source
             $ mvn -f docker-jenkins-maven/pom.xml clean install
             $ gradle clean build --build-file docker-jenkins-gradle/build.gradle
