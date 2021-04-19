@@ -1,4 +1,4 @@
-# docker-jenkins-tutorial (Tutorial about docker, jenkins with spring)
+# docker-jenkins-tutorial (Tutorial about docker, jenkins with spring).
   * Technical points:
     * CI/CD pipeline
     * Build multip container docker with docker compose
