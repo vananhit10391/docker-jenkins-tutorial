@@ -1,17 +1,17 @@
 # DOCKER JENKINS TUTORIAL
-  1. Build CI/CD pipeline for microservice
-     * Spring framework
-     * Mysql
-     * Jenkin
-     * Docker
-     * CI/CD pipeline
-     * Ngrok
-     * Setting GitHub hook trigger for GITScm polling
-  3. Build CI/CD pipeline with AWS
-  4. List module:
-     * docker-jenkins-maven module (Example about CI/CD pipeline with github, jenkin, docker hub for maven)
-     * docker-jenkins-gradle module (Example about CI/CD pipeline with github, jenkin, docker hub for gradle)
-     * docker-spring-mysql module (Example about build spring, mysql on docker)
+1. Build CI/CD pipeline for microservice
+* Spring framework
+* Mysql
+* Jenkin
+* Docker
+* CI/CD pipeline
+* Ngrok
+* Setting GitHub hook trigger for GITScm polling
+3. Build CI/CD pipeline with AWS
+4. List module:
+* docker-jenkins-maven module (Example about CI/CD pipeline with github, jenkin, docker hub for maven)
+* docker-jenkins-gradle module (Example about CI/CD pipeline with github, jenkin, docker hub for gradle)
+* docker-spring-mysql module (Example about build spring, mysql on docker)
 # 1. Build CI/CD pipeline for microservice
 ## 1.1. Clear cache docker
 * Stop and remove all process on docker
