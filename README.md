@@ -58,19 +58,19 @@
               $ docker container logs -t docker-jenkins-gradle-container 
               $ docker container logs -t employee-service-container
 ### Option 2: Build and run docker images by docker compose
-          - Build source
-            $ mvn -f docker-jenkins-maven/pom.xml clean install
-            $ gradle clean build --build-file docker-jenkins-gradle/build.gradle
-            $ gradle clean build --build-file docker-spring-mysql/build.gradle
-          - Build and run with docker compose
-            $ docker compose up
+* Build source
+  $ mvn -f docker-jenkins-maven/pom.xml clean install
+  $ gradle clean build --build-file docker-jenkins-gradle/build.gradle
+  $ gradle clean build --build-file docker-spring-mysql/build.gradle
+* Build and run with docker compose
+  $ docker compose up
 ## 1.4. Testing
 * curl -H "Content-Type: application/json" -XGET localhost:9000/home/
 * curl -H "Content-Type: application/json" -XGET localhost:9001/home/
 * curl -H "Content-Type: application/json" -XGET localhost:9002/employee/
 ## 1.5. Build CI/CD pipeline with jenkins (auto build)
 ### 1.5.1. Config job jenkin (run with docker compose)
-           * Refer scrip config jenkins at <jenkin_scrip.txt> file
+ * Refer scrip config jenkins at <jenkin_scrip.txt> file
 ### 1.5.2. Setting GitHub hook trigger for GITScm polling (auto build source when have event push source code on git)
  * Install ngrok
  * Use ngrok to expose jenkins server to the internet
