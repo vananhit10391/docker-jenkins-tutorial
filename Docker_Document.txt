@@ -1,0 +1,59 @@
+—————————————————————————————— TECHNICAL POINT ——————————————————————————————
+* Kiến thức cơ bản về docker
+* Lợi ích và user-cases
+* Best practise
+* www.terraform.i
+NOTE:
+* Refer link: https://www.youtube.com/watch?v=yBjWKJ5rFUw
+—————————————————————————————— ĐỊNH NGHĨA ——————————————————————————————
+1. Docker
+  - Docker là một công cụ để build, run và deploy application lên các môi trường (có cài đặt docker runtime)
+  - Là một Microservice flatform, hỗ trợ việc vận hành và kết nối các micro-service
+  - Cho phép liên lạc giữa các Microservice để deploy, phân tích log, giám sát
+2. Docker hub
+	- Docker hub là một dịch vụ do Docker cung cấp, dùng để tìm kiếm và chia sẽ các container images
+3. Docker compose
+  - Là một công cụ dùng để định nghĩa và run Muti-container Docker Application
+  - Docker compose sử dụng file YAML để config các services cho application của bạn
+  - Sau đó, dùng command để create và run từ những config đó
+4. Git fllow
+5. CI/CD
+	- CI (Continuous Integration)	: Tích hợp liên tục
+	- CD (Continuous Delivery)		: Phân phối liên tục
+	- Get code, deploy into server: tool đảm nhiệm 
+	- Đảm nhận việc build, chạy test và triển khai source code khi có thay đổi.
+6. Jenkin
+	- Là một ứng dụng web mã nguồn mở được viết bằng java, đóng vai trò là máy chủ build & test hệ thống tích hợp liên tục.
+—————————————————————————————— CHI TIẾT ——————————————————————————————
+1. Docker là gì?
+  - Docker là một công cụ để build, chạy và deploy application
+  - Công nghệ docker sử dụng là container technology.
+  - Tạo một instance mysql/mysql-server bằng docker (mysql/mysql-server container)
+		Refer: https://hub.docker.com/r/mysql/mysql-server
+		Note:
+			Instance này sẽ tách biệt với các package mà bạn đã cài đặt trên máy.
+2. Lợi ích khi sử dụng Docker.
+  - Tiết kiệm thời gian setup và quản lý configuration giữa các môi trường.
+  - Không cần suy nghĩ code/application sẽ chạy trên hệ điều hành nào (chỉ cần hệ điều hành có cài đặt docker runtime)
+3. User-cases
+  - Prototype Application Sandbox Environment
+    (Tạo môi trường để chạy application. Trong đó, bạn sẽ chạy nhiều image: db, web server, …)
+  - Continuous Delivery DevOps CD Pipeline (Kết hợp CI/CD service với Docker để tạo Pipeline tự động hoá deploy application)
+  - Microservice Pattern Deploy Kubernetes.
+  NOTE:
+  - Container là một instance được sinh ra từ image khi chạy command run
+  - Image có thể được chạy bởi nhiều container.
+  - Ví dụ trong lập trinh hướng đối tượng OOP:
+    + Image giống như class
+    + Container là object (instance của class)
+  - Image là một template để tạo container. Trong image sẽ chứa: dependency, package, application code.
+  - Image sẽ được cấu thành từ nhiều layer
+4. Docker architecture
+4.1 Docker daemon
+  - Process Chạy ngầm trên background.
+  - Cung cấp RestAPI để docker client giao tiếp và thực hiện tác vụ cần thiết
+  - Quản lý quyền truy cập và trạng thái các image
+  - Mặc định sử dụng unit socket (chỉ có user root và user thuộc nhóm docker mới truy cập được)
+4.2 Docker client
+  - Chính là các command gõ vào terminate
+  - Giao tiếp với docker daemon thông qua HTTP request tới RestAPI mà docker daemon cung cấp
