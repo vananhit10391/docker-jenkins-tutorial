@@ -77,4 +77,7 @@
 * Install ngrok
 * Use ngrok to expose jenkins server to the internet
 * Configure GITHUB Webhook
+### 1.5.3 Check
+* Push source code into git
+* Jenkin will auto build and run this application
 
