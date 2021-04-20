@@ -2,7 +2,6 @@
 * Kiến thức cơ bản về docker
 * Lợi ích và user-cases
 * Best practise
-* www.terraform.i
 NOTE:
 * Refer link: https://www.youtube.com/watch?v=yBjWKJ5rFUw
 —————————————————————————————— ĐỊNH NGHĨA ——————————————————————————————
