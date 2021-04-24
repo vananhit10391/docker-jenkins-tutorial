@@ -18,7 +18,7 @@ NOTE:
 4. Git fllow
 5. CI/CD
 	- CI (Continuous Integration)	: Tích hợp liên tục
-	- CD (Continuous Delivery)		: Phân phối liên tục
+	- CD (Continuous Delivery)	: Phân phối liên tục
 	- Get code, deploy into server: tool đảm nhiệm 
 	- Đảm nhận việc build, chạy test và triển khai source code khi có thay đổi.
 6. Jenkin
